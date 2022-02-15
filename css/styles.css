@@ -24,6 +24,7 @@
 }
 
 body {
+  width: 1200px;
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
@@ -36,6 +37,12 @@ body {
 
 .header {
   background-color: var(--white);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+  /* outline: 3px solid orange; */
 }
 .logo {
   font-family: var(--secondary-font);
@@ -50,30 +57,48 @@ body {
 }
 
 .nav-list {
+  display: flex;
+}
+.nav-list .item {
+  margin-right: 50px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
+}
+.nav-list .item:last-child {
+  margin-right: 0;
 }
 .nav-link {
   text-decoration: none;
   color: var(--title-color);
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
-}
 .nav-link[title] {
   color: var(--accent-color);
   text-decoration: none;
 }
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
 .header-list {
+  display: flex;
+  margin-left: auto;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
+}
+.header-list .item {
+  margin-right: 50px;
+}
+.header-list .item:last-child {
+  margin-right: 0;
 }
 .mail-link,
 .tel-link {
