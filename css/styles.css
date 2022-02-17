@@ -425,6 +425,7 @@ ul {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
+  border-bottom: 1px var(--white);
 }
 .filter-item:nth-child(3n) {
   margin-right: 0;
