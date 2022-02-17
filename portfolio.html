@@ -17,12 +17,15 @@
   <body>
     <!-- Шапка сайта-->
     <header class="header">
-      <nav class="container nav-container">
+      <div class="container">
+      <nav class="nav">
         <a class="logo" lang="en" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
         <ul class="list nav-list">
+          <div class="nav-item-list">
           <li class="item"><a class="nav-link" href="./index.html">Студия</a></li>
-          <li class="item"><a class="nav-link" href="./portfolio.html" title="Студия">Портфолио</a></li>
+          <li class="item"><a class="nav-link" href="./portfolio.html" title="Портфолио">Портфолио</a></li>
           <li class="item"><a class="nav-link" href="">Контакты</a></li>
+          </div>
         </ul>
         <ul class="list header-list">
           <li class="item">
@@ -34,7 +37,8 @@
           </li>
         </ul>
       </nav>
-         </header>
+      </div>
+    </header>
 
     <!--Основной контент-->
     <main class="main">
@@ -166,11 +170,13 @@
 
     <!--Нижняя часть сайта-->
     <footer class="footer">
-      <a class="footer-logo" lang="en" href="./index.html"
+      <div class="container footer-container">
+            <a class="footer-logo" lang="en" href="./index.html"
         ><span class="footer-logo-accent">Web</span>Studio</a
       >
       <address class="footer-address">
-        <ul class="footer-list">
+        <div class="list footer-list">
+        <ul class="list footer-list">
           <li class="footer-item">
             <a
               class="footer-address-link"
@@ -190,7 +196,9 @@
             >
           </li>
         </ul>
+        </div>
       </address>
+      </div>
     </footer>
   </body>
 </html>
