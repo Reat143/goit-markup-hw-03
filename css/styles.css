@@ -35,7 +35,8 @@ body {
 h1,
 h2,
 h3,
-p {
+p,
+ul {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -57,12 +58,12 @@ p {
 
 .header {
   background-color: var(--white);
+  border-bottom: 1px solid #ececec;
 }
 
-.nav-container {
+.nav {
   display: flex;
   align-items: baseline;
-  border-bottom: 1px solid #ececec;
 }
 .logo {
   margin-right: 93px;
@@ -77,22 +78,26 @@ p {
 .logo-accent {
   color: var(--accent-color);
 }
-.nav-list .item {
-  display: inline-block;
+.nav-item-list {
+  display: flex;
   align-items: center;
-  margin-right: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
-
+}
+.nav-item-list .item {
+  margin-right: 50px;
+}
+.nav-item-list .item:last-child {
+  margin-right: 0;
+}
+.nav .item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
 }
-.nav-list .item:last-child {
-  margin-right: 0;
-}
+
 .nav-link {
   text-decoration: none;
   color: var(--title-color);
@@ -139,7 +144,17 @@ p {
 .hero {
   background-color: var(--second-bg-color);
 }
+.hero-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  text-align: center;
+}
 .title-hero {
+  margin-right: auto;
+  margin-left: auto;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -148,6 +163,8 @@ p {
   color: var(--white);
 }
 .btn-hero {
+  margin-top: 30px;
+  padding: 10px 32px 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -163,9 +180,12 @@ p {
   color: var(--white);
   background-color: var(--accent-color);
 }
+
 /* Advantages */
-.advantage-list {
-  list-style: none;
+.advantage-container {
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .advantage-title {
   position: absolute;
@@ -177,6 +197,21 @@ p {
   white-space: nowrap;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.advantage-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  list-style: none;
+}
+.advantage-item-title {
+  margin-bottom: 10px;
+}
+.advantage-item {
+  margin-right: 30px;
+}
+.advantage-item:last-child {
+  margin-right: 0;
 }
 .advantage-item-title {
   font-size: 14px;
@@ -193,30 +228,62 @@ p {
 }
 
 /* What we do */
-.activity-list {
-  list-style: none;
+.activity {
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  padding-bottom: 94px;
 }
 .activity-title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-
-/* Team */
-.team {
-  background-color: var(--first-bg-color);
-}
-.team-list {
+.activity-list {
+  display: flex;
+  justify-content: center;
   list-style: none;
 }
+.activity-item {
+  margin-right: 30px;
+}
+.activity-item:last-child {
+  margin-right: 0;
+}
+/* Team */
+.team {
+  align-items: center;
+  background-color: var(--first-bg-color);
+}
 .team-title {
+  text-align: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+.team-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.team-item {
+  margin-right: 30px;
+}
+.team-item:last-child {
+  margin-right: 0;
+}
 .team-member-name {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -224,6 +291,8 @@ p {
   color: var(--title-color);
 }
 .team-text {
+  text-align: center;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -236,6 +305,7 @@ p {
   background-color: var(--second-bg-color);
 }
 .footer-logo {
+  padding-top: 60px;
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
