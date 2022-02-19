@@ -253,7 +253,7 @@ ul {
 }
 .team-title {
   text-align: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -296,16 +296,14 @@ ul {
 
 /* Footer */
 .footer {
-  display: block;
   margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--second-bg-color);
 }
-.logo-form {
-  padding-bottom: 20px;
-}
 .footer-logo {
+  display: block;
+  padding-bottom: 20px;
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
@@ -315,6 +313,9 @@ ul {
 }
 .footer-logo-accent {
   color: var(--accent-color);
+}
+.footer-address {
+  display: block;
 }
 .footer-address-link {
   padding-bottom: 9px;
@@ -432,6 +433,7 @@ ul {
   margin-bottom: 20px;
 }
 .poster-text {
+  width: 322px;
   padding: 20px 24px 20px 24px;
 }
 .filter-item-title {
