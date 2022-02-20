@@ -86,7 +86,7 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.nav-item-list .item:last-child {
+.nav-list .item:last-child {
   margin-right: 0;
 }
 .nav .item {
@@ -138,16 +138,15 @@ ul {
 
 /* Hero */
 .hero {
-  background-color: var(--second-bg-color);
-}
-.hero-container {
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-color: var(--second-bg-color);
 }
 .title-hero {
+  margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   width: 696px;
@@ -159,7 +158,6 @@ ul {
   color: var(--white);
 }
 .btn-hero {
-  margin-top: 30px;
   padding: 10px 32px 10px 32px;
   font-weight: 700;
   font-size: 16px;
@@ -195,7 +193,6 @@ ul {
 }
 .advantage-list {
   display: flex;
-  margin-bottom: 0;
 }
 .advantage-item {
   width: 270px;
@@ -443,6 +440,7 @@ ul {
   border-bottom: 1px solid var(--white);
 }
 .filter-item-title {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
