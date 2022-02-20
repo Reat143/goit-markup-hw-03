@@ -440,7 +440,7 @@ ul {
 }
 .poster-text {
   padding: 20px 24px 20px 24px;
-  border: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
 }
 .filter-item-title {
   font-size: 18px;
