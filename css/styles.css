@@ -227,7 +227,7 @@ ul {
 }
 .activity-title {
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -253,7 +253,7 @@ ul {
 }
 .team-title {
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -263,6 +263,7 @@ ul {
   display: flex;
 }
 .team-item {
+  list-style: none;
   margin-right: 30px;
   background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -274,11 +275,15 @@ ul {
 }
 .team-img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+.team-form {
+  padding: 30px 59px 30px 59px;
 }
 .team-member-name {
-  text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -287,7 +292,6 @@ ul {
 }
 .team-text {
   text-align: center;
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -303,7 +307,7 @@ ul {
 }
 .footer-logo {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
@@ -314,11 +318,14 @@ ul {
 .footer-logo-accent {
   color: var(--accent-color);
 }
-.footer-address {
+.footer-item {
   display: block;
+  margin-bottom: 9px;
+}
+.footer-item:last-child {
+  margin-bottom: 0;
 }
 .footer-address-link {
-  padding-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -328,7 +335,6 @@ ul {
 }
 .footer-mail-link,
 .footer-tel-link {
-  padding-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -374,8 +380,9 @@ ul {
 }
 
 /* Filter buttons */
-.filter-buttons {
+.filter {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .filter-btn-list {
   display: flex;
@@ -414,12 +421,10 @@ ul {
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 .filter-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  width: 370px;
   border-bottom: 1px var(--white);
 }
 .filter-item:nth-child(3n) {
@@ -430,11 +435,12 @@ ul {
 }
 .filter-img {
   display: block;
-  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
 }
 .poster-text {
-  width: 322px;
   padding: 20px 24px 20px 24px;
+  border: 1px solid var(--white);
 }
 .filter-item-title {
   font-size: 18px;
