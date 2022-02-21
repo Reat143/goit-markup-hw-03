@@ -276,7 +276,8 @@ ul {
   height: auto;
 }
 .team-form {
-  padding: 30px 59px 30px 59px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-member-name {
   margin-bottom: 10px;
@@ -437,7 +438,7 @@ ul {
 }
 .poster-text {
   padding: 20px 24px 20px 24px;
-  border-bottom: 1px solid var(--white);
+  border: 1px solid var(--white);
 }
 .filter-item-title {
   margin-bottom: 4px;
